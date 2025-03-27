@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리얼대박페이지</title>
+    <style>
+        /* 기본 스타일 */
+        html,
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            padding: 20px;
+            flex-grow: 1;
+            /* 남은 공간을 main이 차지하도록 설정 */
+        }
+
+
+        /* 헤더 스타일 */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+
+        }
+
+        /* 기술 아이콘 스타일 */
+        .hover-effect {
+            margin: 3px;
+            transition: transform 0.3s ease;
+        }
+
+        .hover-effect:hover {
+            transform: translateY(-3px);
+        }
+
+        /* 설명 텍스트 스타일 */
+        .description {
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            height: 150px;
+            width: 600px;
+            text-align: center;
+            
+            /* opacity: 0; */
+            transition: opacity 0.3s ease;
+
+            /* 추가된 스타일 */
+            border: 2px solid #777;
+            /* 윤곽선 색상 및 두께 */
+            border-radius: 10px;
+            /* 모서리를 둥글게 */
+            padding: 15px;
+            /* 내부 여백 */
+            /* background-color: #fff; */
+            /* 배경색 추가 */
+            /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); */
+            /* 부드러운 그림자 효과 */
+        }
+
+
+        /* 푸터 스타일 */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            bottom: 0;
+            /* width: 100%; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>HELLO! 진짜 장정민입니다. 🧏‍♂️</h1>
+    </header>
+
+    <main>
+        <div>
+            <h2>What I can use?</h2>
+            <hr style="width: 45%; border: 1px solid #777575;"><br>
+            <div>
+                <div>
+                    <img class="hover-effect"
+                        src="https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white"
+                        onmouseover="fadeDescription('[UNITY]\n다양한 게임을 개발하고 공부하며 오랜기간 사용하였습니다. \n NGO를 이용한 멀티 1대1 FPS를 만드는 중입니다.', 'description_Main')"
+                        onmouseout="hideDescription('[Description]\n제가 사용해보고 공부해봤던 언어 및 툴입니다.\n아이콘을 눌러 자세한 설명을 확인할 수 있습니다.', 'description_Main')">
+                    <img class="hover-effect"
+                        src="https://img.shields.io/badge/unreal-%23313131.svg?style=for-the-badge&logo=unrealengine&logoColor=white"
+                        onmouseover="fadeDescription('[UNREAL]\n공부하는중... 졸업작품에 사용 할 예정입니다.', 'description_Main')"
+                        onmouseout="hideDescription('[Description]\n제가 사용해보고 공부해봤던 언어 및 툴입니다.\n아이콘을 눌러 자세한 설명을 확인할 수 있습니다.', 'description_Main')">
+                    <img class="hover-effect"
+                        src="https://img.shields.io/badge/c%23-%23632CA6.svg?style=for-the-badge&logo=csharp&logoColor=white"
+                        onmouseover="fadeDescription('[C#]\nGC일해라', 'description_Main')"
+                        onmouseout="hideDescription('[Description]\n제가 사용해보고 공부해봤던 언어 및 툴입니다.\n아이콘을 눌러 자세한 설명을 확인할 수 있습니다.', 'description_Main')">
+                    <img class="hover-effect"
+                        src="https://img.shields.io/badge/cpp-%23123F6D.svg?style=for-the-badge&logo=cplusplus&logoColor=white"
+                        onmouseover="fadeDescription('[C++]\nWin Api, DirectX, BOJ를 위해 사용하고있습니다.', 'description_Main')"
+                        onmouseout="hideDescription('[Description]\n제가 사용해보고 공부해봤던 언어 및 툴입니다.\n아이콘을 눌러 자세한 설명을 확인할 수 있습니다.', 'description_Main')">
+                    <img class="hover-effect"
+                        src="https://img.shields.io/badge/flstudio-%23FF6F00.svg?style=for-the-badge&logo=flstudio&logoColor=white"
+                        onmouseover="fadeDescription('[FLSUTDIO]\n게임음악 작곡을 할 수 있습니다.', 'description_Main')"
+                        onmouseout="hideDescription('[Description]\n제가 사용해보고 공부해봤던 언어 및 툴입니다.\n아이콘을 눌러 자세한 설명을 확인할 수 있습니다.', 'description_Main')">
+                </div>
+
+                <!-- 설명이 표시될 부분 -->
+                <div class="description" id="description_Main">
+                    [Description]<br>제가 주력으로 사용해보고 공부해봤던 언어 및 툴입니다.<br>커서를 옮겨 자세한 설명을 확인할 수 있습니다.
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="hover-effect"
+                        src="https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white"
+                        onmouseover="fadeDescription('[UNITY]\n다양한 게임을 개발하고 공부하며 오랜기간 사용하였습니다. \n NGO를 이용한 멀티 1대1 FPS를 만드는 중입니다.', 'description_Sub')"
+                        onmouseout="hideDescription('[Description]\n제가 가끔 공부해봤던 언어 및 툴입니다.\n아이콘을 눌러 자세한 설명을 확인할 수 있습니다.', 'description_Sub')">
+                    <img class="hover-effect"
+                        src="https://img.shields.io/badge/unreal-%23313131.svg?style=for-the-badge&logo=unrealengine&logoColor=white"
+                        onmouseover="fadeDescription('[UNREAL]\n공부하는중... 졸업작품에 사용 할 예정입니다.', 'description_Sub')"
+                        onmouseout="hideDescription('[Description]\n제가 가끔 공부해봤던 언어 및 툴입니다.\n아이콘을 눌러 자세한 설명을 확인할 수 있습니다.', 'description_Sub')">
+                    <img class="hover-effect"
+                        src="https://img.shields.io/badge/c%23-%23632CA6.svg?style=for-the-badge&logo=csharp&logoColor=white"
+                        onmouseover="fadeDescription('[C#]\nGC일해라', 'description_Sub')"
+                        onmouseout="hideDescription('[Description]\n제가 가끔 공부해봤던 언어 및 툴입니다.\n아이콘을 눌러 자세한 설명을 확인할 수 있습니다.', 'description_Sub')">
+                    <img class="hover-effect"
+                        src="https://img.shields.io/badge/cpp-%23123F6D.svg?style=for-the-badge&logo=cplusplus&logoColor=white"
+                        onmouseover="fadeDescription('[C++]\nWin Api, DirectX, BOJ를 위해 사용하고있습니다.', 'description_Sub')"
+                        onmouseout="hideDescription('[Description]\n제가 가끔 공부해봤던 언어 및 툴입니다.\n아이콘을 눌러 자세한 설명을 확인할 수 있습니다.', 'description_Sub')">
+                    <img class="hover-effect"
+                        src="https://img.shields.io/badge/flstudio-%23FF6F00.svg?style=for-the-badge&logo=flstudio&logoColor=white"
+                        onmouseover="fadeDescription('[FLSUTDIO]\n게임음악 작곡을 할 수 있습니다.', 'description_Sub')"
+                        onmouseout="hideDescription('[Description]\n제가 가끔 공부해봤던 언어 및 툴입니다.\n아이콘을 눌러 자세한 설명을 확인할 수 있습니다.', 'description_Sub')">
+                </div>
+
+                <!-- 설명이 표시될 부분 -->
+                <div class="description" id="description_Sub">
+                    [Description]<br>제가 가끔 공부해봤던 언어 및 툴입니다.<br>커서를 옮겨 자세한 설명을 확인할 수 있습니다.
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        let timeoutId; // 현재 실행 중인 타이머 ID 저장
+
+        function fadeDescription(text, descriptionName) {
+            let description = document.getElementById(descriptionName);
+
+            // 기존 실행 중이던 타이머가 있으면 제거
+            if (timeoutId) {
+                clearTimeout(timeoutId);
+            }
+
+            description.style.opacity = 0; // 먼저 숨김
+
+            timeoutId = setTimeout(() => {
+                description.innerText = text;
+                description.style.opacity = 1; // 부드럽게 나타나게
+            }, 150); // 0.15초로 줄여서 빠르게 반응하게 함
+        }
+
+        function hideDescription(text, descriptionName) {
+            let description = document.getElementById(descriptionName);
+
+            // 기존 실행 중이던 타이머가 있으면 제거
+            if (timeoutId) {
+                clearTimeout(timeoutId);
+            }
+
+            timeoutId = setTimeout(() => {
+                description.style.opacity = 0;
+
+                setTimeout(() => {
+                    description.innerText = text;
+                    description.style.opacity = 1;
+                }, 150); // 텍스트 변경 시 살짝 딜레이
+            }, 200); // 기본 설명으로 돌아가는 시간 약간 추가
+        }
+
+    </script>
+</body>
+<footer>
+    <h3>SIGMA SIGMA BOY 🧏‍♂️</h3>
+    <h5># Made by ChatGPT</h5>
+</footer>
+
+</html>
